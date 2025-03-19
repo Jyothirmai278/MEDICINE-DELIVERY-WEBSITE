@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Contact us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=evice-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="Untitled-1.css">
+</head>
+<section class="contact">
+    <div class="container">
+        <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Header styling */
+        header {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        /* Navigation menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        /* Main content area */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicine Delivery</h1>
+        <p>Your Trusted Online Pharmacy</p>
+    </header>
+    <nav>
+        </a>
+          <a href="j1.html">Home</a>
+          <a href="j3.html">Login</a>
+          <a href="j4.html">Sign Up</a>
+          <a href="new.html">Products</a>
+          <a href="j5.html">Bill & Payment</a>
+          <a href="j6.html">About Us</a>
+          <a href="contact us.html">Contact Us</a>
+    </nav>
+          <style>
+            body {
+       font-family: Arial, sans-serif;
+        max-width: 2000px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+    </style>
+       <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <script>
+                    // ContactUs Route File
+                const express = require('express');
+                const router = express.Router();
+                const contactUsModel = require('../models/contactUs');
+                router.post('/contactUs', async (req, res) => {
+                 const newContactUs = new contactUsModel({
+                    name: req.body.name,
+                    email: req.body.email,
+                    message: req.body.message,
+                 });
+                 try {
+                    const savedContactUs = await newContactUs.save();
+                    res.status(200).json(savedContactUs);
+                 } catch (err) {
+                    res.status(500).json({ message: err.message });
+                 }
+                });      
+                module.exports = router;
+                </script>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i>+91 90009 90009</p>
+                <p><i class="fas fa-envelope"></i>medicinedelivery@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>Hyderabad,Telangana</p>
+            </div>
+        </div>
+    </div>
+</section>

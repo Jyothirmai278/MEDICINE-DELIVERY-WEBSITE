@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOrders - Medicine Delivery</title>
+    <style> 
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Navigation menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Main content area */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicine Delivery</h1>
+        <p>Your Trusted Online Pharmacy</p>
+    </header>
+
+    <nav>
+        </a>
+          <a href="j1.html">Home</a>
+          <a href="j3.html">Login</a>
+          <a href="j4.html">Sign Up</a>
+          <a href="new.html">Products</a>
+          <a href="j5.html">Bill & Payment</a>
+          <a href="j6.html">About Us</a>
+          <a href="contact us.html">Contact Us</a>
+       
+    </nav>
+       
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+    
+        button {o
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Medicine Billing</h1>
+        <label for="medicineName">Medicine Name:</label>
+        <input type="text" id="medicineName">
+    
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity">
+    
+        <label for="price">Price per unit:</label>
+        <input type="number" id="price">
+
+        <label for="deliveryAddress">Delivery Address:</label>
+      <textarea id="deliveryAddress" name="deliveryAddress" rows="4" required></textarea>
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod" required>
+        <option value="online">Online Payment</option>
+        <option value="offline">Offline Payment</option>
+        <select>
+             <button type="submit">Place Order</button>
+        </select>
+
+      
+        <button onclick="calculateTotal()">Calculate Total</button>
+    
+        <p>Total Amount: <span id="totalAmount"></span></p>
+    
+        <script>
+            function calculateTotal() {
+                const quantity = parseFloat(document.getElementById('quantity').value);
+                const price = parseFloat(document.getElementById('price').value);
+                const total = quantity * price;
+                document.getElementById('totalAmount').textContent = `₹${total.toFixed(2)}`;
+            }
+        </script>
+    </body>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Medicine Delivery.</p>
+    </footer>
+</body>
+</html>
